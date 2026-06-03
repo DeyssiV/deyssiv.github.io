@@ -2,17 +2,18 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-    --deep:    #04080f;
-    --navy:    #0a1628;
-    --mid:     #0d2137;
-    --teal:    #0a7e8c;
-    --cyan:    #00d4ff;
+    --deep:    #062a4a;
+    --navy:    #0a3d62;
+    --mid:     #1a5276;
+    --teal:    #1a8fa0;
+    --cyan:    #00c8f0;
     --glow:    #00ffcc;
-    --text:    #c8e6f0;
-    --muted:   #5a8fa3;
-    --white:   #e8f4f8;
+    --text:    #d6eef8;
+    --muted:   #7ab8d4;
+    --white:   #eaf6fd;
     --accent:  #ff6b9d;
-    --font:    'Segoe UI', system-ui, sans-serif;
+    --font:    'Inter', 'Segoe UI', system-ui, sans-serif;
+    --font-title: 'Orbitron', sans-serif;
 }
 
 html { scroll-behavior: smooth; }
@@ -129,11 +130,14 @@ section {
 .hero-tag { font-family: monospace; color: var(--cyan); margin-bottom: 1rem; font-size: 1rem; }
 
 .hero-name {
-    font-size: clamp(3rem, 7vw, 5.5rem);
+    font-family: var(--font-title);
+    font-size: clamp(2.2rem, 5.5vw, 4.2rem);
     font-weight: 800;
-    line-height: 1.05;
+    line-height: 1.15;
     color: var(--white);
     margin-bottom: 1.2rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 30px rgba(0, 200, 240, 0.3);
 }
 
 .hero-name .accent { color: var(--cyan); }
