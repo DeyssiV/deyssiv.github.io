@@ -28,8 +28,8 @@ function initBubbles() {
 function drawOcean() {
     const w = oceanCanvas.width, h = oceanCanvas.height;
     const scroll = window.scrollY / (document.body.scrollHeight - h);
-    const topColor = `hsl(${200 + scroll * 10}, 70%, ${72 - scroll * 10}%)`;
-const botColor = `hsl(${210 + scroll * 10}, 65%, ${55 - scroll * 8}%)`;
+    const topColor = `hsl(${210 + scroll * 10}, 75%, ${12 - scroll * 2}%)`;
+    const botColor = `hsl(${220 + scroll * 10}, 70%, ${8 - scroll}%)`;
     const grad = octx.createLinearGradient(0, 0, 0, h);
     grad.addColorStop(0, topColor);
     grad.addColorStop(1, botColor);
