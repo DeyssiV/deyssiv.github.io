@@ -1,6 +1,5 @@
 const oceanCanvas = document.getElementById("ocean-canvas");
 const octx = oceanCanvas.getContext("2d");
-
 let bubblesEnabled = true;
 let bubbles = [];
 
