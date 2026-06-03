@@ -114,6 +114,37 @@ section {
     transition: opacity 0.2s, transform 0.2s;
 }
 .nav-bubble-toggle:hover { opacity: 1; transform: scale(1.2); }
+.nav-bubble-toggle { position: relative; }
+
+.bubble-tooltip {
+    position: absolute;
+    top: 140%;
+    right: 0;
+    background: rgba(0, 120, 180, 0.9);
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.bubble-tooltip::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    right: 10px;
+    border: 5px solid transparent;
+    border-bottom-color: rgba(0, 120, 180, 0.9);
+}
+
+.nav-bubble-toggle:hover .bubble-tooltip {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 #hero {
     min-height: 100vh;
