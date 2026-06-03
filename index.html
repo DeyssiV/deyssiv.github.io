@@ -3,28 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KOFFIE</title>
+    <title>Deyssi Vedzijeva</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <h1>Koffie is lekker!</h1>
-    <h2>Lees hieronder meer over de geschiedenis van koffie</h2>
-    <p>Koffie vindt zijn oorsprong in Ethiopië, waar volgens de legende een herder genaamd Kaldi rond de 9e eeuw de opwekkende kracht van de koffiebonen ontdekte. 
-        Vanuit Ethiopië verspreidde koffie zich via Jemen naar de Arabische wereld, 
-        waar koffiehuizen al snel een belangrijk cultureel middelpunt werden. 
-        In de 17e eeuw bereikte koffie Europa en groeide het uit tot een van de populairste dranken ter wereld.</p>
-    <img src = "images/koffie-multi.jpg" alt="koffies">
 
-    <h2>De verschillende soorten koffie-bonen:</h2>
-    <p class = "bonen">- <b>Arabica</b><br>- <b>Robusta</b><br>- <b>Liberica</b><br>- <b>Excelsa</b></p>
+    <div class="ocean-bg">
+        <canvas id="ocean-canvas"></canvas>
+    </div>
 
-    <img src = "images/coffee-bean-types.webp" alt="koffie-bonen">
+    <nav id="navbar">
+        <div class="nav-logo">
+            <span class="fish-icon">🐟</span>
+            <span>DV</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-bubble-toggle" onclick="toggleBubbles()" title="Toggle bubbles">🫧</div>
+    </nav>
 
-    <h3>Voor meer info over je favoriete koffiesoort surf naar deze <a href="https://nl.wikipedia.org/wiki/Koffiebonen">wikipedia</a> pagina.</h3>
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-tag">// computer science student</div>
+            <h1 class="hero-name">Deyssi<br><span class="accent">Vedzijeva</span></h1>
+            <p class="hero-sub">Exploring the deep sea of code — one commit at a time.</p>
+            <a href="#about" class="btn-primary">Dive In <span>↓</span></a>
+        </div>
+        <div class="hero-fish-tank">
+            <canvas id="fish-canvas"></canvas>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-header">
+            <span class="section-tag">01.</span>
+            <h2>About Me</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hi! I'm <strong>Deyssi</strong>, a computer science student with a passion for building things that live on the web — and an equal passion for the ocean.</p>
+                <p>I love the underwater world: the colors, the creatures, the calm. It inspires the way I think about code — layered, interconnected, and full of hidden complexity beneath the surface.</p>
+                <p>When I'm not studying or coding, you'll probably find me watching ocean documentaries or daydreaming about diving spots around the world.</p>
+            </div>
+            <div class="about-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="avatar-placeholder"><span>DV</span></div>
+                        <div class="card-info">
+                            <p><span class="label">Status:</span> Student 🎓</p>
+                            <p><span class="label">Vibe:</span> Deep sea + deep code</p>
+                            <p><span class="label">OS:</span> Whatever works 😄</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-header">
+            <span class="section-tag">02.</span>
+            <h2>Skills</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card"><div class="skill-icon">🐍</div><div class="skill-name">Python</div><div class="skill-bar-wrap"><div class="skill-bar" data-width="75"></div></div><div class="skill-percent">75%</div></div>
+            <div class="skill-card"><div class="skill-icon">☕</div><div class="skill-name">Java</div><div class="skill-bar-wrap"><div class="skill-bar" data-width="65"></div></div><div class="skill-percent">65%</div></div>
+            <div class="skill-card"><div class="skill-icon">⚡</div><div class="skill-name">JavaScript</div><div class="skill-bar-wrap"><div class="skill-bar" data-width="70"></div></div><div class="skill-percent">70%</div></div>
+            <div class="skill-card"><div class="skill-icon">🔷</div><div class="skill-name">C#</div><div class="skill-bar-wrap"><div class="skill-bar" data-width="60"></div></div><div class="skill-percent">60%</div></div>
+            <div class="skill-card"><div class="skill-icon">🌐</div><div class="skill-name">HTML & CSS</div><div class="skill-bar-wrap"><div class="skill-bar" data-width="80"></div></div><div class="skill-percent">80%</div></div>
+            <div class="skill-card"><div class="skill-icon">🗃️</div><div class="skill-name">Git</div><div class="skill-bar-wrap"><div class="skill-bar" data-width="55"></div></div><div class="skill-percent">55%</div></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-header">
+            <span class="section-tag">03.</span>
+            <h2>Projects</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-top"><span class="project-fish">🪸</span><div class="project-links"><a href="#" title="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div></div>
+                <h3>This Portfolio</h3>
+                <p>My personal underwater-themed portfolio built with vanilla HTML, CSS, and JavaScript.</p>
+                <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <div class="project-card">
+                <div class="project-top"><span class="project-fish">🐙</span><div class="project-links"><a href="#" title="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div></div>
+                <h3>Coming Soon...</h3>
+                <p>Currently working on exciting new projects. Check back later!</p>
+                <div class="project-tags"><span>Python</span><span>Java</span><span>C#</span></div>
+            </div>
+            <div class="project-card project-add"><div class="add-icon">+</div><p>More projects on the way</p></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-header">
+            <span class="section-tag">04.</span>
+            <h2>Contact</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="contact-content">
+            <p class="contact-intro">Want to connect? Drop me a message — I don't bite (unlike some sea creatures 🦈).</p>
+            <form id="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group"><label for="name">Name</label><input type="text" id="name" placeholder="Your name" required></div>
+                <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="your@email.com" required></div>
+                <div class="form-group"><label for="message">Message</label><textarea id="message" rows="5" placeholder="Say hello! 👋" required></textarea></div>
+                <button type="submit" class="btn-primary">Send Message 🐠</button>
+                <div id="form-msg" class="form-message"></div>
+            </form>
+        </div>
+    </section>
 
     <footer>
-        <p>Gemaakt door: Deyssi</p>
+        <div class="footer-waves">
+            <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+                <path d="M0,50 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,100 L0,100 Z" fill="#0a1628"/>
+            </svg>
+        </div>
+        <div class="footer-content">
+            <p>Made with 🌊 by Deyssi Vedzijeva</p>
+            <p class="footer-sub">// diving deeper every day</p>
+        </div>
     </footer>
-    
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
