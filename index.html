@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deyssi Vedzijeva</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Inter:wght@400;600&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
 </head>
-
 <body>
+
     <div class="ocean-bg">
         <canvas id="ocean-canvas"></canvas>
     </div>
+
     <nav id="navbar">
         <div class="nav-logo">
             <span class="fish-icon">🐟</span>
@@ -28,9 +27,9 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="nav-bubble-toggle" onclick="toggleBubbles()" title="Toggle bubbles">🫧<span
-                  class="bubble-tooltip">Activate bubbles</span></div>
+        <div class="nav-bubble-toggle" onclick="toggleBubbles()" title="Toggle bubbles">🫧<span class="bubble-tooltip">Activate bubbles</span></div>
     </nav>
+
     <section id="hero">
         <div class="hero-content">
             <div class="hero-tag">// aspiring software engineer</div>
@@ -38,13 +37,14 @@
             <p class="hero-sub">Exploring the deep sea of code — one commit at a time.</p>
             <div class="hero-buttons">
                 <a href="#about" class="btn-primary">Dive In ↓</a>
-                <a href="DEYSSI-RESUME.pdf" download class="btn-secondary">Download CV 📄</a>
+                <a href="resume.pdf" download class="btn-secondary">Download CV 📄</a>
             </div>
         </div>
         <div class="hero-fish-tank">
             <canvas id="fish-canvas"></canvas>
         </div>
     </section>
+
     <section id="about">
         <div class="section-header">
             <span class="section-tag">01.</span>
@@ -53,13 +53,9 @@
         </div>
         <div class="about-content">
             <div class="about-text">
-                <p>Hi! I'm <strong>Deyssi Vedzijeva</strong>, an aspiring Software Engineer currently studying
-                    <strong>Applied Informatics</strong> at the University of Ghent (Minor: AI & Data Engineering).</p>
-                <p>I have a strong foundation in Technology Sciences and practical experience in website creation and
-                    design. I combine analytical thinking with interpersonal skills developed through years of teaching
-                    and competing in Kung-Fu at a high level.</p>
-                <p>I love the underwater world just as much as I love code — both are layered, interconnected, and full
-                    of hidden complexity beneath the surface.</p>
+                <p>Hi! I'm <strong>Deyssi</strong>, an aspiring Software Engineer currently studying <strong>Applied Informatics</strong> at the University of Ghent (Minor: AI & Data Engineering).</p>
+                <p>I have a strong foundation in Technology Sciences and practical experience in website creation and design. I combine analytical thinking with interpersonal skills developed through years of teaching and competing in Kung-Fu at a high level.</p>
+                <p>I love the underwater world just as much as I love code — both are layered, interconnected, and full of hidden complexity beneath the surface.</p>
             </div>
             <div class="about-card">
                 <div class="card-inner">
@@ -74,6 +70,7 @@
             </div>
         </div>
     </section>
+
     <section id="skills">
         <div class="section-header">
             <span class="section-tag">02.</span>
@@ -81,82 +78,25 @@
             <div class="section-line"></div>
         </div>
         <div class="skills-grid">
-            <div class="skill-card">
-                <div class="skill-icon">🐍</div>
-                <div class="skill-name">Python</div>
-                <div class="skill-bar-wrap">
-                    <div class="skill-bar" data-width="75"></div>
-                </div>
-                <div class="skill-percent">75%</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">☕</div>
-                <div class="skill-name">Java</div>
-                <div class="skill-bar-wrap">
-                    <div class="skill-bar" data-width="65"></div>
-                </div>
-                <div class="skill-percent">65%</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">⚡</div>
-                <div class="skill-name">JavaScript</div>
-                <div class="skill-bar-wrap">
-                    <div class="skill-bar" data-width="70"></div>
-                </div>
-                <div class="skill-percent">70%</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">🔷</div>
-                <div class="skill-name">C#</div>
-                <div class="skill-bar-wrap">
-                    <div class="skill-bar" data-width="60"></div>
-                </div>
-                <div class="skill-percent">60%</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">🌐</div>
-                <div class="skill-name">HTML & CSS</div>
-                <div class="skill-bar-wrap">
-                    <div class="skill-bar" data-width="80"></div>
-                </div>
-                <div class="skill-percent">80%</div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">🗃️</div>
-                <div class="skill-name">Git</div>
-                <div class="skill-bar-wrap">
-                    <div class="skill-bar" data-width="55"></div>
-                </div>
-                <div class="skill-percent">55%</div>
-            </div>
+            <div class="skill-card"><div class="skill-icon">🐍</div><div class="skill-name">Python</div><div class="skill-bar-wrap"><div class="skill-bar" data-width="75"></div></div><div class="skill-percent">75%</div></div>
+            <div class="skill-card"><div class="skill-icon">☕</div><div class="skill-name">Java</div><div class="skill-bar-wrap"><div class="skill-bar" data-width="65"></div></div><div class="skill-percent">65%</div></div>
+            <div class="skill-card"><div class="skill-icon">⚡</div><div class="skill-name">JavaScript</div><div class="skill-bar-wrap"><div class="skill-bar" data-width="70"></div></div><div class="skill-percent">70%</div></div>
+            <div class="skill-card"><div class="skill-icon">🔷</div><div class="skill-name">C#</div><div class="skill-bar-wrap"><div class="skill-bar" data-width="60"></div></div><div class="skill-percent">60%</div></div>
+            <div class="skill-card"><div class="skill-icon">🌐</div><div class="skill-name">HTML & CSS</div><div class="skill-bar-wrap"><div class="skill-bar" data-width="80"></div></div><div class="skill-percent">80%</div></div>
+            <div class="skill-card"><div class="skill-icon">🗃️</div><div class="skill-name">Git</div><div class="skill-bar-wrap"><div class="skill-bar" data-width="55"></div></div><div class="skill-percent">55%</div></div>
         </div>
-        <div class="subsection-header">
-            <h3>Languages</h3>
-        </div>
+        <div class="subsection-header"><h3>Languages</h3></div>
         <div class="languages-grid">
-            <div class="lang-card"><span class="lang-name">English</span>
-                <div class="lang-stars">★★★★★</div>
-            </div>
-            <div class="lang-card"><span class="lang-name">Dutch</span>
-                <div class="lang-stars">★★★★★</div>
-            </div>
-            <div class="lang-card"><span class="lang-name">Russian</span>
-                <div class="lang-stars">★★★★☆</div>
-            </div>
-            <div class="lang-card"><span class="lang-name">French</span>
-                <div class="lang-stars">★★★★☆</div>
-            </div>
-            <div class="lang-card"><span class="lang-name">Spanish</span>
-                <div class="lang-stars">★★★☆☆</div>
-            </div>
-            <div class="lang-card"><span class="lang-name">Arabic</span>
-                <div class="lang-stars">★☆☆☆☆</div>
-            </div>
-            <div class="lang-card"><span class="lang-name">Chinese</span>
-                <div class="lang-stars">★☆☆☆☆</div>
-            </div>
+            <div class="lang-card"><span class="lang-name">English</span><div class="lang-stars">★★★★★</div></div>
+            <div class="lang-card"><span class="lang-name">Dutch</span><div class="lang-stars">★★★★★</div></div>
+            <div class="lang-card"><span class="lang-name">Russian</span><div class="lang-stars">★★★★☆</div></div>
+            <div class="lang-card"><span class="lang-name">French</span><div class="lang-stars">★★★★☆</div></div>
+            <div class="lang-card"><span class="lang-name">Spanish</span><div class="lang-stars">★★★☆☆</div></div>
+            <div class="lang-card"><span class="lang-name">Arabic</span><div class="lang-stars">★☆☆☆☆</div></div>
+            <div class="lang-card"><span class="lang-name">Chinese</span><div class="lang-stars">★☆☆☆☆</div></div>
         </div>
     </section>
+
     <section id="experience">
         <div class="section-header">
             <span class="section-tag">03.</span>
@@ -169,8 +109,7 @@
                 <div class="timeline-content">
                     <div class="timeline-period">2025 — present</div>
                     <h3>Applied Informatics <span class="timeline-where">· University of Ghent</span></h3>
-                    <p>Bachelor's degree with a Minor in AI & Data Engineering. Focus on machine learning, advanced data
-                        processing, and modern software development.</p>
+                    <p>Bachelor's degree with a Minor in AI & Data Engineering. Focus on machine learning, advanced data processing, and modern software development.</p>
                 </div>
             </div>
             <div class="timeline-item">
@@ -178,8 +117,7 @@
                 <div class="timeline-content">
                     <div class="timeline-period">2023 — 2025</div>
                     <h3>Kung-Fu Teacher <span class="timeline-where">· Long Hu Men Leuven</span></h3>
-                    <p>Trained children in Kung-Fu techniques and discipline. Developed strong communication and
-                        leadership skills in a structured teaching environment.</p>
+                    <p>Trained children in Kung-Fu techniques and discipline. Developed strong communication and leadership skills in a structured teaching environment.</p>
                 </div>
             </div>
             <div class="timeline-item">
@@ -187,8 +125,7 @@
                 <div class="timeline-content">
                     <div class="timeline-period">2022 — 2025</div>
                     <h3>Website Designer & Creator <span class="timeline-where">· Long Hu Men Leuven</span></h3>
-                    <p>Developed and designed a Kung-Fu club website from scratch with custom features that improved
-                        functionality, user satisfaction, and visual representation.</p>
+                    <p>Developed and designed a Kung-Fu club website from scratch with custom features that improved functionality, user satisfaction, and visual representation.</p>
                 </div>
             </div>
             <div class="timeline-item">
@@ -200,29 +137,16 @@
                 </div>
             </div>
         </div>
-        <div class="subsection-header">
-            <h3>Sports & Achievements</h3>
-        </div>
+        <div class="subsection-header"><h3>Sports & Achievements</h3></div>
         <div class="achievements-grid">
-            <div class="achievement-card">
-                <div class="achievement-icon">🥋</div>
-                <h4>Black Belt in Kung-Fu</h4>
-                <p>Achieved the highest rank through years of dedicated training and discipline at Long Hu Men Leuven.
-                </p>
-            </div>
-            <div class="achievement-card">
-                <div class="achievement-icon">🏆</div>
-                <h4>European Champion</h4>
-                <p>Secured victory at the European Kung-Fu Championships, representing Belgium at the highest
-                    competitive level.</p>
-            </div>
-            <div class="achievement-card">
-                <div class="achievement-icon">🇧🇪</div>
-                <h4>Belgian Champion</h4>
-                <p>Won the Belgian Kung-Fu Championship, demonstrating exceptional skill and competitive excellence.</p>
-            </div>
+            <div class="achievement-card"><div class="achievement-icon">🥋</div><h4>Black Belt in Kung-Fu</h4><p>Achieved the highest rank through years of dedicated training and discipline at Long Hu Men Leuven.</p></div>
+            <div class="achievement-card"><div class="achievement-icon">🏆</div><h4>European Champion</h4><p>Secured victory at the European Kung-Fu Championships, representing Belgium at the highest competitive level.</p></div>
+            <div class="achievement-card"><div class="achievement-icon">🇧🇪</div><h4>Belgian Champion</h4><p>Won the Belgian Kung-Fu Championship, demonstrating exceptional skill and competitive excellence.</p></div>
+            <div class="achievement-card"><div class="achievement-icon">🤸</div><h4>Gymnastics Competitions</h4><p>Competed in gymnastics at a competitive level, combining athleticism, precision, and discipline.</p></div>
+            <div class="achievement-card"><div class="achievement-icon">⚽</div><h4>Football — KVK Tienen</h4><p>Played competitive football at KVK Tienen, developing teamwork and strategic thinking on the field.</p></div>
         </div>
     </section>
+
     <section id="projects">
         <div class="section-header">
             <span class="section-tag">04.</span>
@@ -231,36 +155,27 @@
         </div>
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-top"><span class="project-fish">🪸</span>
-                    <div class="project-links"><a href="https://github.com/DeyssiV/deyssiv.github.io" target="_blank"
-                           title="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
-                            </svg></a></div>
+                <div class="project-top">
+                    <span class="project-fish">🪸</span>
+                    <div class="project-links"><a href="https://github.com/DeyssiV/deyssiv.github.io" target="_blank" title="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div>
                 </div>
                 <h3>This Portfolio</h3>
-                <p>My personal underwater-themed portfolio built with vanilla HTML, CSS, and JavaScript. Fully animated
-                    with a canvas-based aquarium.</p>
+                <p>My personal underwater-themed portfolio built with vanilla HTML, CSS, and JavaScript. Fully animated with a canvas-based aquarium.</p>
                 <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
             </div>
             <div class="project-card">
-                <div class="project-top"><span class="project-fish">🐙</span>
-                    <div class="project-links"><a href="https://github.com/DeyssiV" target="_blank" title="GitHub"><svg
-                                 width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
-                            </svg></a></div>
+                <div class="project-top">
+                    <span class="project-fish">🐙</span>
+                    <div class="project-links"><a href="https://github.com/DeyssiV" target="_blank" title="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div>
                 </div>
                 <h3>More coming soon...</h3>
                 <p>Currently working on exciting new projects. Follow me on GitHub to stay updated!</p>
                 <div class="project-tags"><span>Python</span><span>Java</span><span>C#</span></div>
             </div>
-            <div class="project-card project-add">
-                <div class="add-icon">+</div>
-                <p>More projects on the way</p>
-            </div>
+            <div class="project-card project-add"><div class="add-icon">+</div><p>More projects on the way</p></div>
         </div>
     </section>
+
     <section id="contact">
         <div class="section-header">
             <span class="section-tag">05.</span>
@@ -268,24 +183,21 @@
             <div class="section-line"></div>
         </div>
         <div class="contact-content">
-            <p class="contact-intro">Want to connect? Drop me a message — I don't bite (unlike some sea creatures 🦈).
-            </p>
+            <p class="contact-intro">Want to connect? Drop me a message — I don't bite (unlike some sea creatures 🦈).</p>
             <form id="contact-form" onsubmit="handleSubmit(event)">
-                <div class="form-group"><label for="name">Name</label><input type="text" id="name"
-                           placeholder="Your name" required></div>
-                <div class="form-group"><label for="email">Email</label><input type="email" id="email"
-                           placeholder="your@email.com" required></div>
-                <div class="form-group"><label for="message">Message</label><textarea id="message" rows="5"
-                              placeholder="Say hello! 👋" required></textarea></div>
+                <div class="form-group"><label for="name">Name</label><input type="text" id="name" placeholder="Your name" required></div>
+                <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="your@email.com" required></div>
+                <div class="form-group"><label for="message">Message</label><textarea id="message" rows="5" placeholder="Say hello! 👋" required></textarea></div>
                 <button type="submit" class="btn-primary">Send Message 🐠</button>
                 <div id="form-msg" class="form-message"></div>
             </form>
         </div>
     </section>
+
     <footer>
         <div class="footer-waves">
             <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
-                <path d="M0,50 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,100 L0,100 Z" fill="#0d2b47" />
+                <path d="M0,50 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,100 L0,100 Z" fill="#0d2b47"/>
             </svg>
         </div>
         <div class="footer-content">
@@ -293,7 +205,7 @@
             <p class="footer-sub">// diving deeper every day</p>
         </div>
     </footer>
+
     <script src="scripts/main.js"></script>
 </body>
-
 </html>
