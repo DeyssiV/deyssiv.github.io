@@ -2,16 +2,16 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-    --deep:    #062a4a;
-    --navy:    #0a3d62;
-    --mid:     #1a5276;
-    --teal:    #1a8fa0;
-    --cyan:    #00c8f0;
-    --glow:    #00ffcc;
-    --text:    #d6eef8;
-    --muted:   #7ab8d4;
-    --white:   #eaf6fd;
-    --accent:  #ff6b9d;
+    --deep:    #d0eaf5;
+    --navy:    #b8ddf0;
+    --mid:     #e8f5fc;
+    --teal:    #0d8fb0;
+    --cyan:    #0077aa;
+    --glow:    #00aacc;
+    --text:    #0a3a52;
+    --muted:   #2e7a99;
+    --white:   #ffffff;
+    --accent:  #e0506a;
     --font:    'Inter', 'Segoe UI', system-ui, sans-serif;
     --font-title: 'Orbitron', sans-serif;
 }
