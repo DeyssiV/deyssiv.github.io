@@ -8,4 +8,4 @@ My own portfolio built as a applied informatics student.
 - HTML
 - CSS
 - JavaScript
-- AI
+- AI (Claude Code)
