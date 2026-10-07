@@ -820,7 +820,7 @@ a.card:hover {
     stroke-linejoin: round;
 }
 
-/* Outlined version, used for the kung fu school link */
+/* Outlined version, used for the kung fu school link, profile cards and CV download */
 .button--quiet {
     background: transparent;
     color: var(--ink);
