@@ -13,7 +13,7 @@
      9.  Kung fu card
      10. Spoken languages                (hover: flags turn full colour)
      11. Education and experience        (hover: text darkens)
-     12. LinkedIn card                   (hover: mark turns LinkedIn blue)
+     12. LinkedIn + GitHub cards        (hover: mark turns its own colour)
      13. Contact card                    (hover: row lights up)
      14. Buttons
      15. Work section
@@ -295,10 +295,13 @@ img {
 
 .card--path {
     grid-column: span 5;
-    grid-row: span 2;
+    grid-row: span 3;
 }
 
-.card--linkedin {
+/* LinkedIn, GitHub and Certificates stack in the middle column,
+   between Path and Contact */
+.card--linkedin,
+.card--github {
     grid-column: span 3;
 }
 
@@ -308,7 +311,7 @@ img {
 
 .card--contact {
     grid-column: span 4;
-    grid-row: span 2;
+    grid-row: span 3;
 }
 
 
@@ -323,7 +326,7 @@ img {
     box-shadow: var(--shadow);
 }
 
-/* A card that is one big link — the LinkedIn card and the projects */
+/* A card that is one big link — the LinkedIn/GitHub cards and the projects */
 a.card {
     color: inherit;
     text-decoration: none;
@@ -603,18 +606,26 @@ a.card:hover {
 
 
 /* ═══════════════════════════════════════════════════════════════════════
-   12. LINKEDIN CARD
-   The mark is grey until you hover the card, then it turns its own blue.
+   12. LINKEDIN + GITHUB CARDS
+   Both use these classes. The mark is grey until you hover the card,
+   then it turns its own colour. Compact: mark sits beside the handle.
    ═══════════════════════════════════════════════════════════════════════ */
 .linkedin {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 14px;
+    align-content: start;
+}
+
+.linkedin .eyebrow {
+    grid-column: 1 / -1;
+    margin-bottom: 12px;
 }
 
 .linkedin__mark {
+    grid-row: span 2;
     width: 40px;
     height: 40px;
-    margin-bottom: 18px;
     border-radius: 10px;
     filter: var(--logo-rest);
     /* grey at rest */
@@ -628,21 +639,21 @@ a.card:hover {
 /* LinkedIn blue */
 
 .linkedin__handle {
-    margin: 0 0 6px;
+    margin: 0 0 2px;
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
 }
 
 .linkedin__note {
-    margin: 0 0 20px;
+    margin: 0 0 14px;
     color: var(--ink-soft);
     font-size: 14px;
 }
 
 .linkedin .button {
-    align-self: flex-start;
-    margin-top: auto;
+    grid-column: 1 / -1;
+    justify-self: start;
 }
 
 /* ═══════════════════════════════════════════════════════════════════
@@ -978,9 +989,11 @@ section,
 
     .card--path {
         grid-column: span 3;
+        grid-row: auto;
     }
 
-    .card--linkedin {
+    .card--linkedin,
+    .card--github {
         grid-column: span 2;
     }
 
@@ -1093,6 +1106,14 @@ section,
 
 .bento > :nth-child(7) {
     animation-delay: .30s;
+}
+
+.bento > :nth-child(8) {
+    animation-delay: .35s;
+}
+
+.bento > :nth-child(9) {
+    animation-delay: .40s;
 }
 
 @media (prefers-reduced-motion: reduce) {
